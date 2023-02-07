@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: eureka-simple-client
+server:
+  port: 8192
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+    fetchRegistry: true

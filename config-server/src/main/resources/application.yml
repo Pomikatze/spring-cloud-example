@@ -1,0 +1,23 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: config
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations:
+            classpath:/config
+#        git:
+#          uri: file://${user.home}/application-config
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+#    instance:
+#      preferIpAddress: true
+
+
